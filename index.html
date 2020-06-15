@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Wes Anderson</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		html{font-family: 'Noto Sans KR', sans-serif; box-sizing: border-box; scroll-behavior: smooth; background: #151e37;}
+		body, h1, h2, p, div{margin: 0; padding: 0; color: #FFB2F5;}
+		h1{color: #FFB2F5; font-size: 8em;}
+		.row{width: 1200px; margin: auto;}
+.text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+.col-2{width: 33.33%;}
+.col-3{width: 50%;}
+.flexbox{display: flex;}
+.h-200{height: 200px;}
+.h-600{height: 600px;}
+.h-800{height: 800px;}
+.h-900{height: 900px;}
+.h-1200{height: 1200px;}
+.bg-white{background: white;}
+.big{font-size: 6em; letter-spacing: 10px;}
+.textl{letter-spacing: 0px;}
+
+.vl {
+  border-left: 18px solid #FFB2F5;
+  height: 690px;
+  position: absolute;
+  left: 50%;
+  margin-left: -8px;
+  top: 100;
+}
+.vl2 {
+  border-left: 18px solid #FFB2F5;
+  height: 690px;
+  position: absolute;
+  left: 50%;
+  margin-left: -8px;
+  top: 100;
+}
+.vl3 {
+  border-left: 18px solid #FFB2F5;
+  height: 610px;
+  position: absolute;
+  left: 50%;
+  margin-left: -8px;
+  top: 100;
+}
+
+
+.vl4 {
+  border-left: 18px solid #FFB2F5;
+  height: 800px;
+  position: absolute;
+  left: 50%;
+  margin-left: -8px;
+  top: 100;
+}
+
+* {box-sizing:border-box} 
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;}
+  .mySlides {
+    display: none;}
+    .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #FFB2F5;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.text {
+  color: #FFB2F5;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #FFB2F5;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #FFB2F5;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #6699FF;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+.bannner {position: relative;
+display: inline-block;}
+.bannner img {max-width: 100%;}
+.bannner span.text {font-family: 'Coming Soon', cursive;
+  position: absolute;
+top: 50%;
+left: 0;
+transform: translateY(-50%);
+display: none;
+width: 100%;
+font-size: 70px;
+color: #230041;
+font-weight: 900;
+text-align: center;
+}
+.bannner::before, .bannner::after{content: '';
+position: absolute;
+top: 50%;
+left: 50%;
+width: 95%;
+height: 95%;
+transform: translate(-50%,-50%);
+transition: all 1.5s;
+}
+.bannner::before {border-top: 2px solid  #230041;
+border-bottom: 2px solid  #230041;
+width: 0;}
+.bannner::after {border-left: 2px solid  #230041;
+  border-right: 2px solid  #230041;
+  height: 0;
+}
+.bannner:hover span.text{display: block;}
+.bannner:hover::before{width: 95%;}
+.bannner:hover::after{height: 95%;} 
+
+
+
+.img_box{display: block;position: absolute;top: 800%;left: 50%;transform: translate(-50%,-50%);
+border:1px solid #000;width: 1200px;height: 400px;overflow: hidden;}
+.img_box > img{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);width: 100%;transition: transform 1.5s;}
+.img_box:hover > img{transform: translate(-50%,-50%) scale(1.2);}
+
+
+.img_box2{display: block;position: absolute;top: 850%;left: 50%;transform: translate(-50%,-50%);
+border:1px solid #000;width: 1200px;height: 400px;overflow: hidden;}
+.img_box2 > img{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);width: 100%;transition: transform 1.5s;}
+.img_box2:hover > img{transform: translate(-50%,-50%) scale(1.2);}
+
+
+.img_box3{display: block;position: absolute;top: 900%;left: 50%;transform: translate(-50%,-50%);
+border:1px solid #000;width: 1200px;height: 400px;overflow: hidden;}
+.img_box3 > img{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);width: 100%;transition: transform 1.5s;}
+.img_box3:hover > img{transform: translate(-50%,-50%) scale(1.2);}
+
+
+
+
+	</style>
+	<title></title>
+</head>
+
+<body>
+
+<header>
+		
+		<div class="text-center">
+				<h1>About WesAnderson</h1>
+			</div>
+</header>
+
+<section>
+	<div class="flexbox">
+	<div class="col-2 row">
+		<h2><br><br><br><br>웨스 앤더슨<br>1961.05.01<br>미국 영화감독, 작가<br><br>로얄 테넌바움
+			<br>문라이즈 킹덤<br>그랜드 부다페스트 호텔<br>판타스틱 미스터 폭스</h2>
+	</div>
+	<div class="col-2 row">
+		<img src="wes1.png">
+	</div>
+	<div class="col-2 row text-right">
+		<h2><br><br><br><br>Wes Anderson<br>1961.05,01<br>American Film Director, Writer<br><br>The Royal Tenenbaums<br>Moonrise Kingdom<br>The Grand Budapest Hotel<br>Fantastic Mr.Fox</h2>
+	</div>
+</div>
+</section>
+
+<section>
+	<div class="h-600">
+		<div class="vl"></div>
+
+	</div>
+	<h2 class="text-center big">co or</h2>
+
+
+</section>
+
+<section>
+	<div class="h-900">
+		
+		<div class="flexbox">
+	<div class="col-3 row">
+		<br><br><br><br><br><br><br><br><h2>색감 천재<br>영화계의 비주얼리스트라 불리는 그는<br>알록달록하면서도 부드럽고 조화로운 색감의<br>향유를 보여준다.</h2>
+	</div>
+
+	<div class="col-3 row text-right">
+		
+	</div>
+	
+</div>
+
+
+		<div class="flexbox">
+	<div class="col-3 row">
+		
+	</div>
+
+	<div class="col-3 row text-right">
+		<h2><br><br><br><br><br><br>그는 매 영화마다<br>컬러팔레트를 정해두고 의도적으로<br>그 색들을 사용한다. 그의 모든 필모그래피에서는<br>색감의 향연이 펼쳐진다.</h2>
+	</div>
+	
+</div>
+	</div>
+</section>
+
+
+
+	<section>
+			<div class="col-3 row text-center h-900">
+		  	<h2>Color Palette</h2>
+		  		<div class="slideshow-container">
+<div class="mySlides fade">
+   
+    <img src="./wimg/w300554.jpg" style="width:100%">
+    <div class="text">Hotel Chevalier</div>
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="./wimg/w300557.jpg" style="width:100%">
+    <div class="text">The Grand Budapest Hotel</div>
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="./wimg/w300560.jpg" style="width:100%">
+    <div class="text">Moonrise Kingdom</div>
+  </div>
+
+   <div class="mySlides fade">
+    
+    <img src="./wimg/w300563.jpg" style="width:100%">
+    <div class="text">The Royal Tenenbaums</div>
+  </div>
+
+   <div class="mySlides fade">
+    
+    <img src="./wimg/w300572.jpg" style="width:100%">
+    <div class="text">Fantastic Mr.Fox</div>
+  </div>
+
+   <div class="mySlides fade">
+    
+    <img src="./wimg/w300522.jpg" style="width:100%">
+    <div class="text">The Life Aquatic With Steve Zissou</div>
+  </div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span> 
+</div>
+</div>
+
+
+
+</section>
+<script>
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+$( document ).ready( function() { $( window ).scroll( function() { if ( $( this ).scrollTop() > 800 ) { $( '.jcm-top' ).fadeIn(); } else { $( '.jcm-top' ).fadeOut(); } } ); $( '.jcm-top' ).click( function() { $( 'html, body' ).animate( { scrollTop : 0 }, 600 ); return false; } ); } );
+
+
+
+
+</script>
+<section>
+	<div class="h-900">
+   <h2 class="text-center big">Symmetry</h2>
+   <div class="vl2"></div>
+
+
+
+
+  </div>
+</section>
+
+<section>
+  <div class="h-800">
+    
+    <div class="flexbox">
+  <div class="col-3 row">
+    <br><br><br><br><br><br><br><br><h2>대칭변태<br>웨스 앤더슨의 가장 큰 특징중 하나는 대칭이다.<br>그는 대칭을 강박적으로 사랑한다.</h2>
+  </div>
+
+  <div class="col-3 row text-right">
+    
+  </div>
+  
+</div>
+
+
+    <div class="flexbox">
+  <div class="col-3 row">
+    
+  </div>
+
+  <div class="col-3 row text-right">
+    <h2><br><br><br><br><br><br>영화의 오랜 화면 구성법이<br>무시되는 경향이 나타나 어색할 수도 있지만<br> 익숙해진다면 한 장면 한 장면이 기다려질 것이다.</h2>
+  </div>
+  
+</div>
+  </div>
+</section>
+<div class="text-center row">
+  <h2>centered</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oL0DseCrqfU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<br><br><br><br>
+<section>
+  <div class="flexbox">
+  <div class="col-2 row">
+    
+  </div>
+  <div class="col-2 row">
+    <div class="bannner">
+    <img src="./wimg/1.jpg">
+    <span class="text">The Grand Budapest Hotel</span>
+  </div>
+  </div>
+  <div class="col-2 row">
+ 
+  </div>
+
+</div>
+</section>
+<section>
+<div class="flexbox">
+  <div class="col-2 row">
+    
+  </div>
+  <div class="col-2 row">
+    <div class="bannner">
+    <img src="./wimg/2.jpg">
+  <span class="text">Hotel Chevalier</span>
+  </div>
+</div>
+  <div class="col-2 row">
+ 
+  </div>
+  
+</div>
+</section>
+<section>
+<div class="flexbox">
+  <div class="col-2 row">
+    
+  </div>
+  <div class="col-2 row">
+    <div class="bannner">
+    <img src="./wimg/4.jpg">
+    <span class="text">Moonrise Kingdom
+    </span>
+  </div>
+</div>
+  <div class="col-2 row">
+ 
+
+  </div>
+</div>
+</section>
+<section class="h-900">
+<div class="flexbox">
+  <div class="col-2 row">
+    
+  </div>
+  <div class="col-2 row">
+     <div class="bannner">
+    <img src="./wimg/3.jpg">
+    <span class="text">The Royal Tenenbaums</span>
+  </div>
+</div>
+  <div class="col-2 row">
+ 
+  </div>
+  
+</div>
+<div class="vl3"></div>
+</section>
+<section>
+  
+  <h2 class="text-center big textl">&nbsp;Asymmetry n Symmetry</h2>
+
+  <div class="h-900">
+    <h2 class="text-center"><br><br>그는 대칭을 너무나 사랑하지만 무작정 대치시키려고 억지를 쓰지 않는다.<br>
+      오히려 대칭속에 약간의 비대칭성을 활용해 안정감에 긴장감을 더한다.<br>이는 관객에게 묘한 흥미와 재미를 더한다.</h2>
+</div>
+</section>
+<section>
+  <div class="h-600">
+<a href="#" class="img_box">
+  <img src="./wimg/5.jpg"></a>
+ 
+  <a href="#" class="img_box2">
+  <img src="./wimg/6.jpg"></a>
+
+    <a href="#" class="img_box3">
+  <img src="./wimg/7.jpg"></a>
+ </div>
+
+</section>
+<section>
+  <div class="h-900">
+   <h2 class="text-center big">Symmetry</h2>
+   <div class="vl2"></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   <h2 class="text-center big">Fi m</h2>
+  </div>
+</section>
+<section>
+      <div class="col-3 row text-center h-900">
+        
+          <div class="slideshow-container">
+<div class="mySlides fade">
+   
+    <img src="./wimg/gposter.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="./wimg/movie_image.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="./wimg/mposter.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+   <div class="mySlides fade">
+    
+    <img src="./wimg/dposter.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+   <div class="mySlides fade">
+    
+    <img src="./wimg/fposter.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+   <div class="mySlides fade">
+    
+    <img src="./wimg/rposter.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span> 
+</div>
+</div>
+
+
+
+</section>
+<script>
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+$( document ).ready( function() { $( window ).scroll( function() { if ( $( this ).scrollTop() > 800 ) { $( '.jcm-top' ).fadeIn(); } else { $( '.jcm-top' ).fadeOut(); } } ); $( '.jcm-top' ).click( function() { $( 'html, body' ).animate( { scrollTop : 0 }, 600 ); return false; } ); } );
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
